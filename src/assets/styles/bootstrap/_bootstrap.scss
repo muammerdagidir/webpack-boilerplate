@@ -1,0 +1,54 @@
+/*
+ * BOOTSTRAP
+ * 
+ * All components import: 
+ * @import "@plugins/bootstrap/scss/bootstrap"
+ */
+
+@import '@plugins/bootstrap/scss/mixins/banner';
+
+// Configuration
+@import '@plugins/bootstrap/scss/functions';
+@import '@plugins/bootstrap/scss/variables';
+@import '@plugins/bootstrap/scss/maps';
+@import '@plugins/bootstrap/scss/mixins';
+@import '@plugins/bootstrap/scss/utilities';
+
+// Layout & components
+@import '@plugins/bootstrap/scss/root';
+@import '@plugins/bootstrap/scss/reboot';
+@import '@plugins/bootstrap/scss/type';
+@import '@plugins/bootstrap/scss/images';
+@import '@plugins/bootstrap/scss/containers';
+@import '@plugins/bootstrap/scss/grid';
+@import '@plugins/bootstrap/scss/tables';
+@import '@plugins/bootstrap/scss/forms';
+@import '@plugins/bootstrap/scss/buttons';
+@import '@plugins/bootstrap/scss/transitions';
+@import '@plugins/bootstrap/scss/dropdown';
+@import '@plugins/bootstrap/scss/button-group';
+@import '@plugins/bootstrap/scss/nav';
+@import '@plugins/bootstrap/scss/navbar';
+@import '@plugins/bootstrap/scss/card';
+@import '@plugins/bootstrap/scss/accordion';
+@import '@plugins/bootstrap/scss/breadcrumb';
+@import '@plugins/bootstrap/scss/pagination';
+@import '@plugins/bootstrap/scss/badge';
+@import '@plugins/bootstrap/scss/alert';
+@import '@plugins/bootstrap/scss/progress';
+@import '@plugins/bootstrap/scss/list-group';
+@import '@plugins/bootstrap/scss/close';
+@import '@plugins/bootstrap/scss/toasts';
+@import '@plugins/bootstrap/scss/modal';
+@import '@plugins/bootstrap/scss/tooltip';
+@import '@plugins/bootstrap/scss/popover';
+@import '@plugins/bootstrap/scss/carousel';
+@import '@plugins/bootstrap/scss/spinners';
+@import '@plugins/bootstrap/scss/offcanvas';
+@import '@plugins/bootstrap/scss/placeholders';
+
+// Helpers
+@import '@plugins/bootstrap/scss/helpers';
+
+// Utilities
+@import '@plugins/bootstrap/scss/utilities/api';

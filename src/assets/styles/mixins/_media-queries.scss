@@ -1,0 +1,33 @@
+/**
+ * MediaQuery
+ * Usage: @include mq('tablet-wide') { ... } / @include mq(1200px) { ... }
+ */
+
+$breakpoints: (
+  'phone': 480px,
+  'phone-wide': 560px,
+  'tablet-small': 640px,
+  'tablet': 768px,
+  'tablet-wide': 1024px,
+  'tablet-wide-large': 1200px,
+  'desktop': 1248px,
+  'laptop': 1366px,
+  'desktop-wide': 1440px,
+  'desktop-wide-large': 1600px
+);
+
+@mixin mq($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type==min {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  } @else {
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

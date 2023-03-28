@@ -1,0 +1,12 @@
+/**
+ * autocomplete
+ * Usage: @include autocomplete(#000000, #ffffff);
+ */
+
+@mixin autocomplete($background, $color) {
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px $background inset;
+    -webkit-text-fill-color: $color;
+    caret-color: $color;
+  }
+}

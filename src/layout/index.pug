@@ -1,0 +1,13 @@
+- var ProjectName = "Webpack Sample Project"
+- var ProjectAuthor = ""
+block variables
+html
+  head 
+    title #{ProjectName} | #{title}
+    include ../shared/meta.pug
+    block styles
+  body
+    include ../shared/header.pug
+    block content
+    include ../shared/footer.pug
+    block scripts

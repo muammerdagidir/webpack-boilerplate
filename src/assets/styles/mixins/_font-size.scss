@@ -1,0 +1,13 @@
+/**
+ * fontSize
+ * Usage: @include fontSize(14) / @include fontSize(14, 16);
+ */
+
+@mixin fontSize($size: $rem-baseline, $line: $size * 1.6) {
+  font-size: $size + px;
+  font-size: calc($size / $rem-baseline) + rem;
+  line-height: calc($line) + px;
+  line-height: calc($line / $rem-baseline) + rem;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+}
